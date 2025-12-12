@@ -4,8 +4,9 @@ import sys
 
 def main() -> None:
     print(sys.argv)
-    print("Usage: python3 main.py <path_to_book>")
-    if len(sys.argv) != 2: sys.exit(1)
+    if len(sys.argv) != 2: 
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
     book_path: str = sys.argv[1]
     
     contents: str = get_book_text(book_path)
