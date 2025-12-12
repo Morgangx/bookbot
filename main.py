@@ -17,15 +17,14 @@ def main() -> None:
     characters_listings: str = ""
     for char_count in sorted_chars:
         if char_count["char"].isalpha():
-            characters_listings += f"{char_count["char"]}: {char_count["num"]}\n"
-    print(
-        f"============ BOOKBOT ============\n"+
-        f"Analyzing book found at {book_path}...\n"+
-        "----------- Word Count ----------]\n"+
-        f"Found {word_count} total words\n"+
-        "--------- Character Count -------\n"+
-        f"{characters_listings}"+
-        "============= END ==============="
-    )
+            characters_listings += f"{char_count['char']}: {char_count['num']}\n"
+
+    print(f"============ BOOKBOT ============")
+    print(f"Analyzing book found at {book_path}...")
+    print("----------- Word Count ----------")
+    print(f"Found {word_count} total words")
+    print("--------- Character Count -------")
+    print(characters_listings, end="")
+    print("============= END ===============")
     
 main()
