@@ -19,7 +19,7 @@ def main() -> None:
         if char_count["char"].isalpha():
             characters_listings += f"{char_count['char']}: {char_count['num']}\n"
 
-    print(f"============ BOOKBOT ============")
+    print("============ BOOKBOT ============")
     print(f"Analyzing book found at {book_path}...")
     print("----------- Word Count ----------")
     print(f"Found {word_count} total words")
